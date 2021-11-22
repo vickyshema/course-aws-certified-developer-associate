@@ -13,4 +13,4 @@ sudo service codedeploy-agent status
 #Create your application.zip and load it into CodeDeploy:
 
 aws deploy create-application --application-name mywebapp
-aws deploy push --application-name mywebapp --s3-location s3://<MY_BUCKET_NAME>/webapp.zip --ignore-hidden-files
+aws deploy push --application-name mywebapp --s3-location s3://cd-bucket/webapp.zip --ignore-hidden-files
